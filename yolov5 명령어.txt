@@ -1,0 +1,9 @@
+학습 명령어
+python train.py --img 640 --batch 16 --epochs 50 --data ./yolov5_scooter/data_240915_001.yaml --weights yolov5s.pt
+python train.py --img 640 --batch 8 --epochs 50 --data ./data.yaml --weights yolov5.pt
+
+
+test 명령어
+python detect.py --weights runs/train/exp11/weights/best.pt --img 640 --conf 0.25 --source test_img_001.jpg
+
+

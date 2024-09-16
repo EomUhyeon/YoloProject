@@ -1,0 +1,6 @@
+train: ./dataset/images/train  # 학습 이미지 경로
+val: ./dataset/images/val      # 검증 이미지 경로
+
+nc: 2  # 헬멧 착용 여부
+
+names: ['helmet_on', 'helmet_off']  # 클래스 이름
