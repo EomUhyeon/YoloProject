@@ -2,7 +2,7 @@ import sys
 import os
 
 # yolov5 디렉토리를 Python 경로에 추가
-sys.path.append(os.path.join(os.path.dirname(__file__), 'yolov5'))  # yolov5 경로 추가
+sys.path.append(os.path.join(os.path.dirname(__file__), '../yolov5'))  # yolov5 경로 추가
 
 import torch
 import cv2  # OpenCV for visualization
@@ -10,7 +10,7 @@ from yolov5.models.common import DetectMultiBackend
 from yolov5.utils.general import non_max_suppression
 
 # yolov5 디렉토리를 Python 경로에 추가
-sys.path.append(os.path.join(os.path.dirname(__file__), 'yolov5'))  # yolov5 경로 추가
+sys.path.append(os.path.join(os.path.dirname(__file__), '../yolov5'))  # yolov5 경로 추가
 
 # 로컬에서 YOLOv5 모델 불러오기
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -18,7 +18,7 @@ model = DetectMultiBackend('yolov5s.pt', device=device)  # 사전 학습된 yolo
 model.eval()  # 평가 모드로 설정
 
 # 이미지 경로를 통해 예측 수행
-img_path = 'test_img/test_img_001.jpg'
+img_path = '../test_img/test_img_001.jpg'
 
 # OpenCV를 사용해 이미지를 로드
 im0s = cv2.imread(img_path)
@@ -67,4 +67,4 @@ for det in pred:
         cv2.destroyAllWindows()  # 창 닫기
 
         # 결과 이미지 저장
-        cv2.imwrite('result_image.jpg', im0s)  # 결과 저장
+        cv2.imwrite('../result_image.jpg', im0s)  # 결과 저장
