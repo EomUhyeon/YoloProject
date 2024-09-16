@@ -1,0 +1,11 @@
+# 개인 설정
+.idea/
+
+# 가상환경
+venv/
+
+# 크롬 드라이버
+chromedriver-win64/
+
+#로컬 저장소
+save/
