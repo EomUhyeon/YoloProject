@@ -4,6 +4,7 @@ python train.py --img 640 --batch 8 --epochs 50 --data ./data.yaml --weights yol
 
 
 test 명령어
-python detect.py --weights runs/train/exp11/weights/best.pt --img 640 --conf 0.25 --source test_img_001.jpg
+python detect.py --weights runs/train/exp11/weights/best.pt --img 640 --conf 0.25 --source test_img_003.jpg
 
-
+yolov5 프로젝트 다운로드
+git clone https://github.com/ultralytics/yolov5.git

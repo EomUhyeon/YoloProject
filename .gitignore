@@ -13,3 +13,6 @@ chromedriver-win64/
 #로컬 저장소
 save/
 data/
+electric_scooter_yolov5/
+helmet_on_off_yolov5/
+person_bicycle_yolov5/
